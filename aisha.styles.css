@@ -1,0 +1,261 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url('header\ background.jpg');
+    color: #fff;
+}
+
+nav {
+    text-align: center;   
+    background-color: #fff;
+    color: #000;
+}
+
+nav ul {
+    display:inline-flex;
+    list-style-type: none;
+    color: #000;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    display: grid;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #131313;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #566337;
+}
+
+section {
+    padding: 30px 0;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Home Page */
+
+.home {
+    background-image: url('home\ html\ image\ 2\ -\ Copy.jpg');
+    background-size: cover;
+    border-width: 50%;
+     color: #1c0000;
+}
+
+
+
+
+.home h1{
+    text-align: center;
+    color: #222;
+}
+.home{height:100%;}
+.home p {
+    text-align: center;
+    color: #666;
+}
+
+
+/* Menu Page */
+body.menu {
+    background-size: cover;
+    background-position: center;
+    color: #0f0e0e;
+}
+.menu{
+    background-image: url('alfredo-pasta.jpg');
+    color: #171515 ;
+    text-align: center;
+
+}
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ccc;
+}
+
+.menu-item h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #1d1b1b;
+}
+
+/* About Us Page */
+body.about-section {
+    background-size: cover;
+    background-position: center;
+    color: #0f0e0e;
+}
+
+.about-section {
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.about-section {
+    background-image: url('light\ menu\ background.jpg');}
+.about-section h2 {
+    font-size: 36px;
+    color: #000;
+}
+
+.about-section h1 {
+    color: #000;
+   float: center;
+}
+
+.about-section p {
+    color: #0b0b0b;
+}
+
+/* Contact Page */
+body.contact {
+    background-image: url('contact-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.contact address{
+    text-align: center;
+}
+
+.contact p{
+    text-align: center;
+}
+.contact h1{
+    text-align: center;
+}
+.contact strong{
+    text-align: center;
+}
+.contact h2{
+    text-align: center;
+}
+
+
+/* Reservation Page */
+body.reservation {
+    background-image: url('reservation-bu.');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reservation-form input[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Gallery Page */
+body.gallery {
+    background-image: url('gallery-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Reviews Page */
+body.reviews {
+    background-image: url('reviews-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #312f2f;
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-style: url('newhome.jpg');
+}
+
+
+.review h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.review p {
+    color: #5c5959;
+}

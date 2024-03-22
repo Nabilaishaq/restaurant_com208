@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Restaurant reservation</title>
+  <link rel="stylesheet" href="aisha.styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reservation</h1>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="restaurant homepage.html">Home</a></li>
+          <li><a href="restaurant menu.html">Menu</a></li>
+          <li><a href="about us page.html">About Us</a></li>
+          <li><a href="contact page.html">Contact</a></li>
+          <li><a href="reservation page.html">Reservation</a></li>
+          <li><a href="gallery page.html">Gallery</a></li>
+          <li><a href="review page.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="Reservation">
+    <h1>Restaurant Reservation</h1>
+    <form id="reservationForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" maxlength="20" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" required>
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+      <label for="table">Table Preference:</label>
+      <select id="table" name="table" required>
+        <option value="">Select a Table</option>
+        <option value="standard">Standard</option>
+        <option value="window">Window View</option>
+        <option value="terrace">Terrace</option>
+      </select>
+      <label for="file">Upload Special Requests:</label>
+      <input type="file" id="file" name="file">
+      <label><input type="checkbox" id="checkbox"> I agree to the terms and conditions</label>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p id="displayMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Aisha's Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      if (name === '' || email === '') {
+        alert("Please enter your details");
+        return false;
+      const displayMessage = document.getElementById("displayMessage");
+      displayMessage.innerHTML = `Thank you for submitting your form, ${name}!`;
+      return true;
+    }
+
+    document.getElementById("checkbox").addEventListener("click", function() {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = "That is amazing.";
+      document.getElementById("reservationForm").appendChild(paragraph);
+    });
+  </script>
+</body>
+</html>
