@@ -116,7 +116,7 @@ body.menu {
     color: #1d1b1b;
 }
 
-/* About Us Page */
+/* about */
 body.about-section {
     background-size: cover;
     background-position: center;
@@ -144,7 +144,7 @@ body.about-section {
     color: #0b0b0b;
 }
 
-/* Contact Page */
+/* contact */
 body.contact {
     background-image: url('contact-background.jpg');
     background-size: cover;
@@ -212,7 +212,7 @@ body.reservation {
     background-color: #444;
 }
 
-/* Gallery Page */
+/* gallery */
 body.gallery {
     background-image: url('gallery-background.jpg');
     background-size: cover;
